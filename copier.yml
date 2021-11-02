@@ -1,0 +1,10 @@
+# CONFIGURATION -------------------------
+_subdirectory: template
+_tasks:
+  - poetry install
+  - git init
+  - git add .
+  - git commit -m 'First commit'
+  - poetry run task test
+# PROMPT --------------------------------
+project_description: Makes excellent coffee.

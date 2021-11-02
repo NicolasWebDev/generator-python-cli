@@ -1,0 +1,14 @@
+import click
+from .[[ _folder_name ]] import main
+
+
+@click.command(
+    help="[[ project_description ]]",
+    context_settings=dict(help_option_names=["-h", "--help"]),
+)
+def cli():
+    main()
+
+
+def entry_point():
+    cli(prog_name="[[ _folder_name | replace("_", "-") ]]")
