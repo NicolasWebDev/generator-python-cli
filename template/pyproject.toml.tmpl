@@ -15,12 +15,13 @@ start = "src.[[ _folder_name ]].cli:entry_point"
 [tool.taskipy.tasks]
 test = "pytest"
 watch = "ptw"
-lint = "echo Running lint... && task lint_vulture"
+lint = "echo Running lint... && task lint_vulture ; task lint_safety"
 lint_vulture = "vulture ."
+lint_safety = "chronic safety check"
 
 [tool.isort]
 profile = "black"
-skip_gitignore = True
+skip_gitignore = true
 line_length = 88
 
 [build-system]

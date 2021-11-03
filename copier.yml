@@ -2,11 +2,11 @@
 _subdirectory: template
 _tasks:
   - poetry add click
-  - poetry add --dev pytest pytest-watch pytest-cov taskipy vulture black isort
+  - poetry add --dev pytest pytest-watch pytest-cov taskipy vulture black isort safety
   - git init
   - git add .
   - git commit -m 'First commit'
-  - poetry run task test
   - poetry run task lint
+  - poetry run task test
 # PROMPT --------------------------------
 project_description: Makes excellent coffee.

@@ -9,5 +9,6 @@ I use the internal `_folder_name`, which is set to the basename of the destinati
 ## TODO
 
 - use the latest version of python automatically (maybe looking at https://github.com/pawamoy/copier-poetry)
-- add more tools
+- add more tools (mypy, pylint)
 - add tests
+- if prompted, create a project of the same name (but with "-" instead of "−") on my github, push to it
