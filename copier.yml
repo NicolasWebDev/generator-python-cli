@@ -1,7 +1,8 @@
 # CONFIGURATION -------------------------
 _subdirectory: template
 _tasks:
-  - poetry install
+  - poetry add click
+  - poetry add --dev pytest pytest-watch pytest-cov taskipy vulture
   - git init
   - git add .
   - git commit -m 'First commit'
