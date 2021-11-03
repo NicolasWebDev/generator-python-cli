@@ -13,6 +13,7 @@ pytest = "^6.2.5"
 pytest-watch = "^4.2.0"
 pytest-cov = "^3.0.0"
 taskipy = "^1.9.0"
+vulture = "^2.3"
 
 [tool.poetry.scripts]
 start = "src.[[ _folder_name ]].cli:entry_point"
@@ -20,6 +21,8 @@ start = "src.[[ _folder_name ]].cli:entry_point"
 [tool.taskipy.tasks]
 test = "pytest"
 watch = "ptw"
+lint = "echo Running lint... && task lint_vulture"
+lint_vulture = "vulture ."
 
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]

@@ -6,5 +6,6 @@ _tasks:
   - git add .
   - git commit -m 'First commit'
   - poetry run task test
+  - poetry run task lint
 # PROMPT --------------------------------
 project_description: Makes excellent coffee.
