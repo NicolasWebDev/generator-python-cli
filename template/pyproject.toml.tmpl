@@ -18,6 +18,11 @@ watch = "ptw"
 lint = "echo Running lint... && task lint_vulture"
 lint_vulture = "vulture ."
 
+[tool.isort]
+profile = "black"
+skip_gitignore = True
+line_length = 88
+
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
