@@ -1,6 +1,7 @@
 import pytest
 from src.[[ _folder_name ]].[[ _folder_name ]] import main
 
-@pytest.mark.skip(reason="to_modify")
-def test_main():
-    main()
+def describe_main():
+    @pytest.mark.skip(reason="to_modify")
+    def it_runs():
+        main()

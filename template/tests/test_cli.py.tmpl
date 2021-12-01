@@ -3,9 +3,10 @@ from click.testing import CliRunner
 from src.[[ _folder_name ]].cli import cli
 
 
-@patch(
-    "src.[[ _folder_name ]].cli.main",
-)
-def test_cli(mock_function):
-    assert CliRunner().invoke(cli).exit_code == 0
-    mock_function.assert_called_with()
+def describe_cli():
+    @patch(
+        "src.[[ _folder_name ]].cli.main",
+    )
+    def it_runs_successfully(mock_function):
+        assert CliRunner().invoke(cli).exit_code == 0
+        mock_function.assert_called_with()

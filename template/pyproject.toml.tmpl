@@ -27,6 +27,9 @@ profile = "black"
 skip_gitignore = true
 line_length = 88
 
+[tool.vulture]
+exclude = ["tests/"]
+
 [build-system]
 requires = ["setuptools", "poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
