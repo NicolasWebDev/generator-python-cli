@@ -19,6 +19,9 @@ lint = "echo Running lint... && task lint_vulture ; task lint_safety"
 lint_vulture = "vulture ."
 lint_safety = "chronic safety check"
 
+[tool.pytest.ini_options]
+addopts = "--workers auto"
+
 [tool.isort]
 profile = "black"
 skip_gitignore = true
