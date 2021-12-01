@@ -14,7 +14,7 @@ start = "src.[[ _folder_name ]].cli:entry_point"
 
 [tool.taskipy.tasks]
 test = "pytest"
-watch = "ptw"
+watch = "ptw --onfail 'notify-send --icon=/usr/share/icons/Adwaita/256x256/legacy/face-angry.png \" \"' --onpass 'notify-send --icon=/usr/share/icons/Adwaita/256x256/legacy/face-cool.png \" \"'"
 lint = "echo Running lint... && task lint_vulture ; task lint_safety"
 lint_vulture = "vulture ."
 lint_safety = "chronic safety check"

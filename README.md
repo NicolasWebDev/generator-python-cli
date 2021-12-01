@@ -13,3 +13,4 @@ I use the internal `_folder_name`, which is set to the basename of the destinati
 - add tests
 - if prompted, create a project of the same name (but with "-" instead of "−") on my github, push to it
 - install the package in development mode using `sudo pip install -e .` or the equivalent setuptools command
+- fix the ptw notifications icons so that it may work for other people as well (try to include an svg directly somehow)
