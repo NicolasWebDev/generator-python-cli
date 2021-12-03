@@ -1,1 +1,2 @@
-let ale_python_black_auto_poetry=1
+let g:ale_python_black_auto_poetry = 1
+let g:ale_python_prospector_executable = "poetry"
