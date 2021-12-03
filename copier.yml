@@ -2,7 +2,9 @@
 _subdirectory: template
 _tasks:
   - poetry add click
-  - poetry add --dev pytest pytest-watch pytest-cov pytest-parallel pytest-describe taskipy vulture black isort safety
+  - poetry add --dev pytest pytest-watch pytest-cov pytest-parallel
+    pytest-describe taskipy vulture black isort prospector autoimport
+    pre-commit
   - git init
   - git add .
   - git commit -m 'First commit'
