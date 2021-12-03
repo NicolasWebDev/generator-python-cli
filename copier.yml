@@ -8,6 +8,7 @@ _tasks:
   - git init
   - git add .
   - git commit -m 'First commit'
+  - poetry run task fix
   - poetry run task lint
   - poetry run task test
 # PROMPT --------------------------------

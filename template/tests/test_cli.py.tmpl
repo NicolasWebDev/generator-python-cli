@@ -10,3 +10,4 @@ def describe_cli():
     def it_runs_successfully(mock_function):
         assert CliRunner().invoke(cli).exit_code == 0
         mock_function.assert_called_with()
+        assert False
