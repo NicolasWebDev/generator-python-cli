@@ -11,7 +11,7 @@ def copy_template_to_committed_git_repo(generator_path):
     copy_tree(".", generator_path)
     repo = Repo(generator_path)
     repo.git.add(all=True)
-    repo.git.commit("-m", "Commit working dir")
+    repo.git.commit("--message='Commit working dir'", "--allow-empty")
     assert not repo.git.status(
         "--short"
     ), "the git status should be empty after committing"
