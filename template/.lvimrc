@@ -1,2 +1,3 @@
-let g:ale_python_black_auto_poetry = 1
-let g:ale_python_prospector_executable = "poetry"
+let g:ale_python_auto_poetry = 1
+let g:ale_python_autoimport_executable = 'poetry' " See https://gitter.im/vim-ale/Lobby?at=5d850d3f1998d51695711fb7 to understand why I have to set both _executable and _options.
+let g:ale_python_autoimport_options = 'run autoimport'
