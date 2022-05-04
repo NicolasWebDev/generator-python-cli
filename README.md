@@ -24,6 +24,7 @@ I just have to change the python version in `template/pyproject.toml.tmpl`.
 
 - use the latest version of python automatically (maybe looking at https://github.com/pawamoy/copier-poetry)
 - add more tools (mypy, pylint)
+- install pre-commit in the project automatically
 - if prompted, create a project of the same name (but with "-" instead of "−") on my github, push to it
 - install the package in development mode using `sudo pip install -e .` or the equivalent setuptools command
 - fix the ptw notifications icons so that it may work for other people as well (try to include an svg directly somehow)
