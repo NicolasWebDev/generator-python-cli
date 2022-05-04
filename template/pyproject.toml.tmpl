@@ -18,9 +18,6 @@ watch = "ptw --onfail 'notify-send --icon=/usr/share/icons/Adwaita41/256x256/leg
 fix = "echo Running fixers... && autoimport **/*.py && isort . && black ."
 lint = "echo Running linters... && prospector --no-external-config --messages-only && vulture"
 
-[tool.pytest.ini_options]
-addopts = "--workers auto"
-
 [tool.isort]
 profile = "black"
 skip_gitignore = true
